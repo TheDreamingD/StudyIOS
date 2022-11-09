@@ -38,6 +38,17 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"No");
                 break;
         }
+        
+        // 반복문
+        for (int i = 0; i < hello.wheels; i++) {
+            NSLog(@"wheels: %i", i);
+        }
+        
+        int i = 0;
+        while (i < hello.seats) {
+            NSLog(@"seats: %i", i);
+            i++;
+        }
     }
     return 0;
 }
