@@ -19,6 +19,18 @@ int main(int argc, const char * argv[]) {
         for (NSString *strTemp in month) {
             NSLog(@"month: %@", strTemp);
         }
+        
+        NSMutableArray *mMonth = [NSMutableArray arrayWithArray:month];
+        for (NSString *strTemp in mMonth) {
+            NSLog(@"mMonth: %@", strTemp);
+        }
+        
+        [mMonth addObject:@"October"];
+        [mMonth addObject:@"November"];
+        [mMonth addObject:@"December"];
+        for (NSString *strTemp in mMonth) {
+            NSLog(@"mMonth: %@", strTemp);
+        }
     }
     return 0;
 }
