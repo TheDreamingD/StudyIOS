@@ -14,28 +14,15 @@
 }
 
 // member method
--(void)setWheels:(int)w;
--(int)wheels; // getter는 변수명과 동일하게 사용하는 것을 권장
--(void)setSeats:(int)s;
--(int)seats;
+@property int wheels;
+@property int seats;
 
 -(void)print;
 @end
 
 @implementation Vehicle
--(void)setWheels:(int)w {
-    wheels = w;
-}
--(int)wheels {
-    return wheels;
-}
-
--(void)setSeats:(int)s {
-    seats = s;
-}
--(int)seats {
-    return seats;
-}
+@synthesize wheels;
+@synthesize seats;
 
 -(void)print {
     NSLog(@"wheels: %i, seats: %i", wheels, seats);
