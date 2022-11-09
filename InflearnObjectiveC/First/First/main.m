@@ -12,7 +12,7 @@
 }
 
 // member method
-@property (getter=getWheels, setter=wheels:) int wheels;
+@property int wheels;
 @property int seats;
 
 -(void)print;
