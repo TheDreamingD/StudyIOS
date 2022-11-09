@@ -15,7 +15,10 @@
 
 // member method
 -(void)setWheels:(int)w;
+-(int)wheels; // getter는 변수명과 동일하게 사용하는 것을 권장
 -(void)setSeats:(int)s;
+-(int)seats;
+
 -(void)print;
 @end
 
@@ -23,9 +26,15 @@
 -(void)setWheels:(int)w {
     wheels = w;
 }
+-(int)wheels {
+    return wheels;
+}
 
 -(void)setSeats:(int)s {
     seats = s;
+}
+-(int)seats {
+    return seats;
 }
 
 -(void)print {
@@ -41,7 +50,7 @@ int main(int argc, const char * argv[]) {
         [hello setWheels:4];
         [hello setSeats:2];
         
-        [hello print];
+        NSLog(@"wheels: %i, seats: %i", [hello wheels], [hello seats]);
     }
     return 0;
 }
