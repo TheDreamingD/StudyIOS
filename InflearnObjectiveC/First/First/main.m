@@ -15,7 +15,29 @@ int main(int argc, const char * argv[]) {
         // [Receiver Message] 형식으로 함수 호출
         [hello setWheels:4 Seats:2];
         
-        NSLog(@"wheels: %i, seats: %i", hello.wheels, hello.seats);
+        // 조건문
+        hello.wheels = 3;
+        if ([hello wheels] == 4) { // hello.wheels == 4 라고 해도 됨
+            NSLog(@"wheels: 4");
+        } else if (hello.wheels == 3) {
+            NSLog(@"wheels: 3");
+        } else {
+            NSLog(@"No");
+        }
+
+        switch (hello.seats) {
+            case 4:
+                NSLog(@"seats: 4");
+                break;
+                
+            case 2:
+                NSLog(@"seats: 2");
+                break;
+                
+            default:
+                NSLog(@"No");
+                break;
+        }
     }
     return 0;
 }
