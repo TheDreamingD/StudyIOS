@@ -23,6 +23,13 @@ int main(int argc, const char * argv[]) {
         NSLog(@"result: %@", result);
         result = [[str substringWithRange:NSMakeRange(8, 3)] lowercaseString];
         NSLog(@"result: %@", result);
+        
+        NSMutableString *mStr = [NSMutableString stringWithString:str];
+        NSLog(@"mStr: %@", mStr);
+        [mStr appendString:@" and NSMutableString"];
+        NSLog(@"mStr: %@", mStr);
+        [mStr insertString:@"Mutable " atIndex:8];
+        NSLog(@"mStr: %@", mStr);
     }
     return 0;
 }
