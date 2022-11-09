@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         
 //        NSString *str = [[NSString alloc] initWithString:@"This is NSString"]; // convenience method를 사용해 할당 후 바로 초기화하면서 값을 넣음
         
-        NSString *str = @"This is NSString"; // NSString은 더 편리하게도 사용 가능 
+        NSString *str = @"This is NSString"; // NSString은 더 편리하게도 사용 가능
 
         NSLog(@"str: %@", str);
     }
