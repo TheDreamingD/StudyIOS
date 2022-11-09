@@ -9,12 +9,10 @@
 
 @interface Vehicle : NSObject {
     // member variable
-    int wheels; // int, float, double, long, ... - primitive type
-    int seats;
 }
 
 // member method
-@property int wheels;
+@property (getter=getWheels, setter=wheels:) int wheels;
 @property int seats;
 
 -(void)print;
@@ -34,10 +32,10 @@ int main(int argc, const char * argv[]) {
         Vehicle *hello = [[Vehicle alloc] init]; // create instance object // [Vehicle new] -> [[Vehicle alloc]init]: 일반적으로 new 대신에 alloc과 init을 더 많이 씀
         
         // [Receiver Message] 형식으로 함수 호출
-        [hello setWheels:4];
-        [hello setSeats:2];
+        hello.wheels = 4;
+        hello.seats = 2;
         
-        NSLog(@"wheels: %i, seats: %i", [hello wheels], [hello seats]);
+        NSLog(@"wheels: %i, seats: %i", hello.wheels, hello.seats);
     }
     return 0;
 }
