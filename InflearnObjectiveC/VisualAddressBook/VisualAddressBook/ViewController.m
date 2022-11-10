@@ -14,6 +14,7 @@
 @end
 
 @implementation ViewController
+@synthesize resultTextView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +42,7 @@
 }
 
 - (IBAction)showAllBookAction:(id)sender {
-    NSLog(@"%@", [mybook showAllBook]);
+//    resultTextView.text = [mybook showAllBook];
+    [resultTextView setText:[mybook showAllBook]]; // 위와 똑같은 코드
 }
 @end

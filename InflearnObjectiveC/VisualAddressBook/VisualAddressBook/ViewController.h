@@ -12,6 +12,8 @@
     BookManager *mybook;
 }
 
+@property (nonatomic, strong) IBOutlet UITextView *resultTextView;
+
 - (IBAction)showAllBookAction:(id)sender;
 @end
 
