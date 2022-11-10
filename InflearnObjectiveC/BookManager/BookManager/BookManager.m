@@ -62,4 +62,15 @@
     }
     return nil;
 }
+
+- (NSString *)removeBook:(NSString *)name {
+    for (Book *bookTemp in bookList) {
+        if ([bookTemp.name isEqualToString:name]) {
+            [bookList removeObject:bookTemp];
+            return name;
+        }
+    }
+    
+    return nil;
+}
 @end
