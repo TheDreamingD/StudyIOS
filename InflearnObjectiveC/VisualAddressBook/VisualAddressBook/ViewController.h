@@ -12,6 +12,6 @@
     BookManager *mybook;
 }
 
-
+- (IBAction)showAllBookAction:(id)sender;
 @end
 

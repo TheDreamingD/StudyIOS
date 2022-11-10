@@ -40,5 +40,7 @@
     [mybook addBook:book3];
 }
 
-
+- (IBAction)showAllBookAction:(id)sender {
+    NSLog(@"%@", [mybook showAllBook]);
+}
 @end
