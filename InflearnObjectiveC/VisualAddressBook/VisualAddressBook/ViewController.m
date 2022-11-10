@@ -58,4 +58,14 @@
     
     resultTextView.text = @"책이 추가됐습니다";
 }
+
+- (IBAction)findBookAction:(id)sender {
+    NSString *strTemp = [mybook findBook:nameTextField.text];
+    
+    if (strTemp != nil) {
+        resultTextView.text = strTemp;
+    } else {
+        resultTextView.text = @"찾으시는 책이 없네요";
+    }
+}
 @end
