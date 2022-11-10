@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void)addBook:(Book *)bookObject;
+- (NSString *)showAllBook;
 @end
 
 NS_ASSUME_NONNULL_END
