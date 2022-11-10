@@ -16,6 +16,7 @@
 @property (nonatomic, strong) IBOutlet UITextField *nameTextField;
 @property (nonatomic, strong) IBOutlet UITextField *genreTextField;
 @property (nonatomic, strong) IBOutlet UITextField *authorTextField;
+@property (nonatomic, strong) IBOutlet UILabel *countLabel;
 
 - (IBAction)showAllBookAction:(id)sender;
 - (IBAction)addBookAction:(id)sender;
