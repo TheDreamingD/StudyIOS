@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		89B73E5D291C8E9E0035A34B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B73E5C291C8E9E0035A34B /* main.m */; };
 		89B73E65291C92D60035A34B /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B73E64291C92D60035A34B /* Book.m */; };
+		89B73E68291C961A0035A34B /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B73E67291C961A0035A34B /* BookManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		89B73E5C291C8E9E0035A34B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89B73E63291C92D60035A34B /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		89B73E64291C92D60035A34B /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		89B73E66291C961A0035A34B /* BookManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
+		89B73E67291C961A0035A34B /* BookManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				89B73E5C291C8E9E0035A34B /* main.m */,
+				89B73E66291C961A0035A34B /* BookManager.h */,
+				89B73E67291C961A0035A34B /* BookManager.m */,
 				89B73E63291C92D60035A34B /* Book.h */,
 				89B73E64291C92D60035A34B /* Book.m */,
 			);
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B73E68291C961A0035A34B /* BookManager.m in Sources */,
 				89B73E65291C92D60035A34B /* Book.m in Sources */,
 				89B73E5D291C8E9E0035A34B /* main.m in Sources */,
 			);

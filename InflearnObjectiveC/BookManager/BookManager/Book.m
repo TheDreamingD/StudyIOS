@@ -10,7 +10,7 @@
 @implementation Book
 @synthesize name, genre, author; // synthesize도 한 줄에 써도 됨
 
--(void)bookPrint {
+- (void)bookPrint {
     NSLog(@"Name: %@", name);
     NSLog(@"Genre: %@", genre);
     NSLog(@"Author: %@", author);

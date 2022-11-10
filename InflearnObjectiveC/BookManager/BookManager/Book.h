@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *genre, *author; // 이렇게 한 줄에 써도 됨
 
--(void)bookPrint;
+- (void)bookPrint;
 @end
 
 NS_ASSUME_NONNULL_END
