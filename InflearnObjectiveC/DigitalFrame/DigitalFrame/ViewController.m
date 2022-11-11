@@ -13,7 +13,7 @@
 
 @implementation ViewController
 @synthesize imgView;
-@synthesize toggleButton, speedSlider;
+@synthesize toggleButton, speedSlider, speedLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,6 @@
                            nil];
     
     imgView.animationImages = cuteImages;
-    imgView.animationDuration = 11.0;
 }
 
 - (IBAction)toggleAction:(id)sender {
@@ -45,5 +44,13 @@
         [imgView startAnimating];
         [toggleButton setTitle:@"Stop" forState:UIControlStateNormal];
     }
+}
+
+- (IBAction)changeSpeedAction:(id)sender {
+    imgView.animationDuration = speedSlider.value;
+    [imgView startAnimating];
+    [toggleButton setTitle:@"Stop" forState:UIControlStateNormal];
+    
+    speedLabel.text = [[NSString alloc] initWithFormat:@"%.2f", speedSlider.value];
 }
 @end

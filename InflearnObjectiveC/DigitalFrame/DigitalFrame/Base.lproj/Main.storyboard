@@ -23,6 +23,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7.5" minValue="0.0" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-z0-ASf">
                                 <rect key="frame" x="18" y="766" width="298" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeSpeedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="a4E-Wh-RxR"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-t3-8S3">
                                 <rect key="frame" x="170" y="827" width="75" height="35"/>
@@ -46,6 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="imgView" destination="aCc-6b-7Td" id="bRX-Gb-KSd"/>
+                        <outlet property="speedLabel" destination="wOr-mb-jdz" id="S4S-YM-sUs"/>
                         <outlet property="speedSlider" destination="6Qf-z0-ASf" id="V5Q-II-hN6"/>
                         <outlet property="toggleButton" destination="Dsv-t3-8S3" id="9bE-4E-RG8"/>
                     </connections>
