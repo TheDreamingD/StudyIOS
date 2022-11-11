@@ -9,6 +9,8 @@
 
 @interface ViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UIImageView *imgView;
+@property (nonatomic, strong) IBOutlet UIButton *toggleButton;
 
+- (IBAction)toggleAction:(id)sender;
 @end
 

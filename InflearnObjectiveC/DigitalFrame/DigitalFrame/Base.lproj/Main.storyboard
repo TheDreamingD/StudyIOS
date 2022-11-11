@@ -29,6 +29,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="toggleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Omb-VV-Ckh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOr-mb-jdz">
                                 <rect key="frame" x="343" y="770" width="51" height="21"/>
@@ -43,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="imgView" destination="aCc-6b-7Td" id="bRX-Gb-KSd"/>
+                        <outlet property="toggleButton" destination="Dsv-t3-8S3" id="9bE-4E-RG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
