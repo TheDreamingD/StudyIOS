@@ -21,5 +21,6 @@
 
 
 - (IBAction)signUpAction:(id)sender {
+    resultTextView.text = [NSString stringWithFormat:@"%@ 님 가입을 축하드립니다.", nameTextField.text];
 }
 @end
