@@ -74,7 +74,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UTa-1i-lPO">
-                                <rect key="frame" x="159" y="393" width="235" height="34"/>
+                                <rect key="frame" x="159" y="392" width="235" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -93,6 +93,9 @@
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ViK-nU-TbF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxx-qC-D2M">
                                 <rect key="frame" x="20" y="114" width="76" height="30"/>
@@ -111,6 +114,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="blogTextField" destination="UTa-1i-lPO" id="dtj-Ph-Bcd"/>
+                        <outlet property="idTextField" destination="vvF-hg-OND" id="MkF-yx-Bkr"/>
+                        <outlet property="nameTextField" destination="wD0-MD-Eh6" id="Qs8-xa-wXL"/>
+                        <outlet property="passwordTextField" destination="kTE-Zn-Iff" id="UhM-RG-BUe"/>
+                        <outlet property="resultTextView" destination="m15-9l-DHp" id="pao-wQ-qRd"/>
+                        <outlet property="telTextField" destination="IHS-SJ-Ny3" id="BJe-Kc-Nne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

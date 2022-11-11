@@ -12,6 +12,7 @@
 @end
 
 @implementation ViewController
+@synthesize nameTextField, idTextField, passwordTextField, telTextField, blogTextField, resultTextView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -19,4 +20,6 @@
 }
 
 
+- (IBAction)signUpAction:(id)sender {
+}
 @end
