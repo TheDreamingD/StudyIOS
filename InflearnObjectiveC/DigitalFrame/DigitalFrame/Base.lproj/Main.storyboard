@@ -46,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="imgView" destination="aCc-6b-7Td" id="bRX-Gb-KSd"/>
+                        <outlet property="speedSlider" destination="6Qf-z0-ASf" id="V5Q-II-hN6"/>
                         <outlet property="toggleButton" destination="Dsv-t3-8S3" id="9bE-4E-RG8"/>
                     </connections>
                 </viewController>
