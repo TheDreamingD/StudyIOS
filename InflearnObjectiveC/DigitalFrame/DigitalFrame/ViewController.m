@@ -12,6 +12,7 @@
 @end
 
 @implementation ViewController
+@synthesize imgView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
