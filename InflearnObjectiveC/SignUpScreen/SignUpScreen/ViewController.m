@@ -29,4 +29,8 @@
     [textField resignFirstResponder]; // 키보드를 내리겠다
     return YES;
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
 @end
