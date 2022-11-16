@@ -15,8 +15,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSLog(@"viewDidLoad");
 }
 
-
+- (void)loadView {
+    [super loadView];
+    NSLog(@"loadView");
+}
 @end
