@@ -14,6 +14,10 @@
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 - (IBAction)bookmarkAction:(id)sender;
+- (IBAction)backAction:(id)sender;
+- (IBAction)forwardAction:(id)sender;
+- (IBAction)stopAction:(id)sender;
+- (IBAction)refreshAction:(id)sender;
 
 @end
 

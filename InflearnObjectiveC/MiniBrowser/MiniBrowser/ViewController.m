@@ -32,6 +32,22 @@
     return YES;
 }
 
+- (IBAction)refreshAction:(id)sender {
+    [mainWebView reload];
+}
+
+- (IBAction)stopAction:(id)sender {
+    [mainWebView stopLoading];
+}
+
+- (IBAction)forwardAction:(id)sender {
+    [mainWebView goForward];
+}
+
+- (IBAction)backAction:(id)sender {
+    [mainWebView goBack];
+}
+
 - (IBAction)bookmarkAction:(id)sender {
     NSString *bookmarkURL = [bookmarkSegmentedControl titleForSegmentAtIndex:bookmarkSegmentedControl.selectedSegmentIndex];
     NSString *urlString = [[NSString alloc] initWithFormat:@"http://www.%@.com", bookmarkURL];
