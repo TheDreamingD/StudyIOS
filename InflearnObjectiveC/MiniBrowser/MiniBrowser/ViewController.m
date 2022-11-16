@@ -12,7 +12,7 @@
 @end
 
 @implementation ViewController
-@synthesize mainWebView, urlTextField, bookmarkSegmentedControl;
+@synthesize mainWebView, urlTextField, bookmarkSegmentedControl, activityIndicatorView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +35,15 @@
 - (IBAction)bookmarkAction:(id)sender {
     NSString *bookmarkURL = [bookmarkSegmentedControl titleForSegmentAtIndex:bookmarkSegmentedControl.selectedSegmentIndex];
     NSString *urlString = [[NSString alloc] initWithFormat:@"http://www.%@.com", bookmarkURL];
+    urlTextField.text = urlString;
     [mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [activityIndicatorView startAnimating];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [activityIndicatorView stopAnimating];
 }
 @end
