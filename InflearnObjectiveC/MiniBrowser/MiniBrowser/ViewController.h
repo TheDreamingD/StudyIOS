@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *urlTextField;
 @property (strong, nonatomic) IBOutlet UIWebView *mainWebView;
 
+- (IBAction)bookmarkAction:(id)sender;
 
 @end
 

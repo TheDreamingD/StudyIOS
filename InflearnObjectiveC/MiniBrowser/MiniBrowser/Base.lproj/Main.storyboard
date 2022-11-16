@@ -20,11 +20,14 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="facebook"/>
+                                    <segment title="twitter"/>
                                     <segment title="apple"/>
                                     <segment title="google"/>
                                 </segments>
+                                <connections>
+                                    <action selector="bookmarkAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bS7-rA-eVR"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-X9-lfk">
                                 <rect key="frame" x="0.0" y="98" width="393" height="34"/>

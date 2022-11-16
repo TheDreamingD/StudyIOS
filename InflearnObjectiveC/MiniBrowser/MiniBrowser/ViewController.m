@@ -23,8 +23,18 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     NSString *urlString = urlTextField.text;
+    
+    if (![urlString hasPrefix:@"http://"]) {
+        urlString = [[NSString alloc] initWithFormat:@"http://%@", urlString];
+    }
     [mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
     [textField resignFirstResponder];
     return YES;
+}
+
+- (IBAction)bookmarkAction:(id)sender {
+    NSString *bookmarkURL = [bookmarkSegmentedControl titleForSegmentAtIndex:bookmarkSegmentedControl.selectedSegmentIndex];
+    NSString *urlString = [[NSString alloc] initWithFormat:@"http://www.%@.com", bookmarkURL];
+    [mainWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
 }
 @end
