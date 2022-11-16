@@ -56,6 +56,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="bookmarkSegmentedControl" destination="2R9-tX-Y15" id="i4g-Ix-EzU"/>
+                        <outlet property="mainWebView" destination="iCK-oQ-gRd" id="270-hV-c19"/>
+                        <outlet property="urlTextField" destination="LUP-X9-lfk" id="DxV-fc-ZAH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
