@@ -27,17 +27,22 @@
 }
 
 - (IBAction)showDatePicker:(id)sender {
+    NSLog(@"description2 : %@", [sender description]);
     selectDatePicker.hidden = FALSE;
 }
 
 - (IBAction)showReturnDateAction:(id)sender {
-    if (returnDateLabel.hidden == YES) {
-        returnDateLabel.hidden = NO;
-        returnDateButton.hidden = false;
-    } else {
-        returnDateLabel.hidden = YES;
-        returnDateButton.hidden = TRUE;
-    }
+    NSLog(@"description1 : %@", [sender description]);
+//    if ([sender isOn]) {
+//        returnDateLabel.hidden = NO;
+//        returnDateButton.hidden = false;
+//    } else {
+//        returnDateLabel.hidden = YES;
+//        returnDateButton.hidden = TRUE;
+//    }
+    
+    returnDateLabel.hidden = ![sender isOn];
+    returnDateButton.hidden = ![sender isOn];
 }
 
 - (IBAction)selectDateAction:(id)sender {
@@ -46,6 +51,6 @@
     
     NSString *dateString = [formatter stringFromDate:selectDatePicker.date];
     [departureDateButton setTitle:dateString forState:UIControlStateNormal];
-    NSLog(@"description : %@", [sender description]);
+    NSLog(@"description3 : %@", [sender description]);
 }
 @end
