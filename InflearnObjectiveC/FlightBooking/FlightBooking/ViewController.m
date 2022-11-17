@@ -59,4 +59,9 @@
     }
     NSLog(@"description3 : %@", [sender description]);
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 @end
