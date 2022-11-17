@@ -41,5 +41,11 @@
 }
 
 - (IBAction)selectDateAction:(id)sender {
+    NSDate *today = [[NSDate alloc] init];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"YY-MM-d hh:mma";
+    
+    NSString *dateString = [formatter stringFromDate:today];
+    NSLog(@"%@", dateString);
 }
 @end
