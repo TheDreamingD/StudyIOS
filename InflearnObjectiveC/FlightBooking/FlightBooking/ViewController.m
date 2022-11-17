@@ -12,7 +12,7 @@
 @end
 
 @implementation ViewController
-@synthesize returnDateLabel, returnDateButton, selectDatePicker;
+@synthesize returnDateLabel, returnDateButton, selectDatePicker, departureDateButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,11 +41,11 @@
 }
 
 - (IBAction)selectDateAction:(id)sender {
-    NSDate *today = [[NSDate alloc] init];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @"YY-MM-d hh:mma";
     
-    NSString *dateString = [formatter stringFromDate:today];
-    NSLog(@"%@", dateString);
+    NSString *dateString = [formatter stringFromDate:selectDatePicker.date];
+    [departureDateButton setTitle:dateString forState:UIControlStateNormal];
+    NSLog(@"description : %@", [sender description]);
 }
 @end

@@ -11,6 +11,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *returnDateLabel;
 @property (strong, nonatomic) IBOutlet UIButton *returnDateButton;
 @property (strong, nonatomic) IBOutlet UIDatePicker *selectDatePicker;
+@property (strong, nonatomic) IBOutlet UIButton *departureDateButton;
 
 - (IBAction)selectDateAction:(id)sender;
 - (IBAction)showReturnDateAction:(id)sender;
