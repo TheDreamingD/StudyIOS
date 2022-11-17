@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIPickerViewDataSource> {
+@interface ViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     NSArray *companyName;
     NSArray *tesla;
 }

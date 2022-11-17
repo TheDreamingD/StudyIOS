@@ -33,4 +33,12 @@
         return tesla.count;
     }
 }
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    if (component == 0) {
+        return [companyName objectAtIndex:row];
+    } else {
+        return [tesla objectAtIndex:row];
+    }
+}
 @end
