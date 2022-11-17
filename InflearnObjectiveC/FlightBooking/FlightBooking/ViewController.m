@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    buttonTag = 0;
     returnDateLabel.hidden = YES;
     returnDateButton.hidden = TRUE;
     selectDatePicker.hidden = true;
@@ -29,6 +30,7 @@
 - (IBAction)showDatePicker:(id)sender {
     NSLog(@"description2 : %@", [sender description]);
     selectDatePicker.hidden = FALSE;
+    buttonTag = [sender tag];
 }
 
 - (IBAction)showReturnDateAction:(id)sender {
@@ -50,7 +52,11 @@
     formatter.dateFormat = @"YY-MM-d hh:mma";
     
     NSString *dateString = [formatter stringFromDate:selectDatePicker.date];
-    [departureDateButton setTitle:dateString forState:UIControlStateNormal];
+    if (buttonTag == 1) {
+        [departureDateButton setTitle:dateString forState:UIControlStateNormal];
+    } else {
+        [returnDateButton setTitle:dateString forState:UIControlStateNormal];
+    }
     NSLog(@"description3 : %@", [sender description]);
 }
 @end

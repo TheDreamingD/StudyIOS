@@ -7,7 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSInteger buttonTag;
+}
+
 @property (strong, nonatomic) IBOutlet UILabel *returnDateLabel;
 @property (strong, nonatomic) IBOutlet UIButton *returnDateButton;
 @property (strong, nonatomic) IBOutlet UIDatePicker *selectDatePicker;
