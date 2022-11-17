@@ -21,8 +21,25 @@
     selectDatePicker.hidden = true;
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+    selectDatePicker.hidden = YES;
+}
+
+- (IBAction)showDatePicker:(id)sender {
+    selectDatePicker.hidden = FALSE;
+}
+
 - (IBAction)showReturnDateAction:(id)sender {
-    returnDateLabel.hidden = NO;
-    returnDateButton.hidden = false;
+    if (returnDateLabel.hidden == YES) {
+        returnDateLabel.hidden = NO;
+        returnDateButton.hidden = false;
+    } else {
+        returnDateLabel.hidden = YES;
+        returnDateButton.hidden = TRUE;
+    }
+}
+
+- (IBAction)selectDateAction:(id)sender {
 }
 @end
