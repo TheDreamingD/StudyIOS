@@ -7,7 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIPickerViewDataSource> {
+    NSArray *companyName;
+    NSArray *tesla;
+}
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
