@@ -48,6 +48,20 @@
     NSDictionary *dicTemp = [dataList objectAtIndex:indexPath.row];
     
     cell.textLabel.text = [dicTemp objectForKey:@"지역"];
+    NSString *weatherStr = [dicTemp objectForKey:@"날씨"];
+    cell.detailTextLabel.text = weatherStr;
+    
+    if ([weatherStr isEqualToString:@"맑음"]) {
+        cell.imageView.image = [UIImage imageNamed:@"icon_infomation_camera.png"];
+    } else if ([weatherStr isEqualToString:@"비"]) {
+        cell.imageView.image = [UIImage imageNamed:@"icon_infomation_place.png"];
+    } else if ([weatherStr isEqualToString:@"흐림"]) {
+        cell.imageView.image = [UIImage imageNamed:@"icon_infomation_road.png"];
+    } else if ([weatherStr isEqualToString:@"눈"]) {
+        cell.imageView.image = [UIImage imageNamed:@"image_del_png.png"];
+    } else {
+        cell.imageView.image = [UIImage imageNamed:@"information_img.png"];
+    }
     
     return cell;
 }
