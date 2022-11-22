@@ -21,6 +21,12 @@
     
     tesla = [[NSArray alloc] initWithObjects:@"모델S", @"모델X", nil];
     teslaImageNames = [[NSArray alloc] initWithObjects:@"icon_infomation_camera_big.png", @"icon_infomation_camera.png", nil];
+    
+    lambo = [[NSArray alloc] initWithObjects:@"아벤타도르", @"베네노", @"우라칸", nil];
+    lamboImageNames = [[NSArray alloc] initWithObjects:@"icon_infomation_place_big.png", @"icon_infomation_place.png", @"icon_infomation_road_big.png", nil];
+    
+    porsche = [[NSArray alloc] initWithObjects:@"911", @"박스터", nil];
+    porscheImageNames = [[NSArray alloc] initWithObjects:@"icon_infomation_road.png", @"icon_photo_upload.png", nil];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {

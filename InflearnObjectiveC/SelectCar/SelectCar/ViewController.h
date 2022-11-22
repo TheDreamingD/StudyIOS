@@ -11,6 +11,12 @@
     NSArray *companyName;
     NSArray *tesla;
     NSArray *teslaImageNames;
+    
+    NSArray *lambo;
+    NSArray *lamboImageNames;
+    
+    NSArray *porsche;
+    NSArray *porscheImageNames;
 }
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
