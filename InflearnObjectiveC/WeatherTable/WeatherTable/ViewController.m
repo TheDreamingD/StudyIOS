@@ -43,6 +43,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
+    NSDictionary *dicTemp = [dataList objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [dicTemp objectForKey:@"지역"];
+    
+    return cell;
 }
 @end
