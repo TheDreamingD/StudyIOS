@@ -9,6 +9,10 @@
 
 @interface ViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     NSArray *companyName;
+    
+    NSArray *carModel;
+    NSArray *carModelImage;
+
     NSArray *tesla;
     NSArray *teslaImageNames;
     
