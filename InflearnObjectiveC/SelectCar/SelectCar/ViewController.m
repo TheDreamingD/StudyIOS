@@ -20,6 +20,7 @@
     companyName = [[NSArray alloc] initWithObjects:@"테슬라", @"람보르기니", @"포스쉐", nil];
     
     tesla = [[NSArray alloc] initWithObjects:@"모델S", @"모델X", nil];
+    teslaImageNames = [[NSArray alloc] initWithObjects:@"icon_infomation_camera_big.png", @"icon_infomation_camera.png", nil];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -39,6 +40,12 @@
         return [companyName objectAtIndex:row];
     } else {
         return [tesla objectAtIndex:row];
+    }
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if (component == 1) {
+        imageView.image = [UIImage imageNamed:[teslaImageNames objectAtIndex:row]];
     }
 }
 @end

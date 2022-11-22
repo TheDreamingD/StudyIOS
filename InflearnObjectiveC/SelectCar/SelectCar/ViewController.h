@@ -10,6 +10,7 @@
 @interface ViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     NSArray *companyName;
     NSArray *tesla;
+    NSArray *teslaImageNames;
 }
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
