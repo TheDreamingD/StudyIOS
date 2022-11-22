@@ -14,6 +14,11 @@
 		891460EB292C8D78007A8402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891460EA292C8D78007A8402 /* Assets.xcassets */; };
 		891460EE292C8D78007A8402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891460EC292C8D78007A8402 /* LaunchScreen.storyboard */; };
 		891460F1292C8D78007A8402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 891460F0292C8D78007A8402 /* main.m */; };
+		891460FD292C9143007A8402 /* image_del_png.png in Resources */ = {isa = PBXBuildFile; fileRef = 891460F8292C9143007A8402 /* image_del_png.png */; };
+		891460FE292C9143007A8402 /* icon_infomation_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 891460F9292C9143007A8402 /* icon_infomation_camera.png */; };
+		891460FF292C9143007A8402 /* information_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 891460FA292C9143007A8402 /* information_img.png */; };
+		89146100292C9143007A8402 /* icon_infomation_place.png in Resources */ = {isa = PBXBuildFile; fileRef = 891460FB292C9143007A8402 /* icon_infomation_place.png */; };
+		89146101292C9143007A8402 /* icon_infomation_road.png in Resources */ = {isa = PBXBuildFile; fileRef = 891460FC292C9143007A8402 /* icon_infomation_road.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		891460ED292C8D78007A8402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891460EF292C8D78007A8402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891460F0292C8D78007A8402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		891460F8292C9143007A8402 /* image_del_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_del_png.png; sourceTree = "<group>"; };
+		891460F9292C9143007A8402 /* icon_infomation_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_infomation_camera.png; sourceTree = "<group>"; };
+		891460FA292C9143007A8402 /* information_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information_img.png; sourceTree = "<group>"; };
+		891460FB292C9143007A8402 /* icon_infomation_place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_infomation_place.png; sourceTree = "<group>"; };
+		891460FC292C9143007A8402 /* icon_infomation_road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_infomation_road.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 		891460DD292C8D76007A8402 /* WeatherTable */ = {
 			isa = PBXGroup;
 			children = (
+				891460F7292C9114007A8402 /* Resources */,
 				891460DE292C8D76007A8402 /* AppDelegate.h */,
 				891460DF292C8D76007A8402 /* AppDelegate.m */,
 				891460E1292C8D76007A8402 /* SceneDelegate.h */,
@@ -74,6 +85,18 @@
 				891460F0292C8D78007A8402 /* main.m */,
 			);
 			path = WeatherTable;
+			sourceTree = "<group>";
+		};
+		891460F7292C9114007A8402 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				891460F9292C9143007A8402 /* icon_infomation_camera.png */,
+				891460FB292C9143007A8402 /* icon_infomation_place.png */,
+				891460FC292C9143007A8402 /* icon_infomation_road.png */,
+				891460F8292C9143007A8402 /* image_del_png.png */,
+				891460FA292C9143007A8402 /* information_img.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				891460EE292C8D78007A8402 /* LaunchScreen.storyboard in Resources */,
+				891460FE292C9143007A8402 /* icon_infomation_camera.png in Resources */,
+				891460FF292C9143007A8402 /* information_img.png in Resources */,
 				891460EB292C8D78007A8402 /* Assets.xcassets in Resources */,
+				89146101292C9143007A8402 /* icon_infomation_road.png in Resources */,
 				891460E9292C8D76007A8402 /* Main.storyboard in Resources */,
+				891460FD292C9143007A8402 /* image_del_png.png in Resources */,
+				89146100292C9143007A8402 /* icon_infomation_place.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
