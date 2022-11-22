@@ -33,6 +33,9 @@
     
     carModel = tesla;
     carModelImage = teslaImageNames;
+    
+    imageView.layer.cornerRadius = 50.0;
+    imageView.layer.masksToBounds = true;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -69,6 +72,6 @@
     
     [pickerView reloadAllComponents];
     
-//    imageView.image = [UIImage imageNamed:[teslaImageNames objectAtIndex:row]];
+    imageView.image = [UIImage imageNamed:[carModelImage objectAtIndex:[pickerView selectedRowInComponent:1]]];
 }
 @end
