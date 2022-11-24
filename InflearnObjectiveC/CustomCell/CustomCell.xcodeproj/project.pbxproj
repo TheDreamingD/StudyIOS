@@ -23,6 +23,8 @@
 		89FA78C6292F09C200E10112 /* my_go_icon_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FA78C0292F09C200E10112 /* my_go_icon_information.png */; };
 		89FA78C7292F09C200E10112 /* rec_voice_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FA78C1292F09C200E10112 /* rec_voice_a.png */; };
 		89FA78C8292F09C200E10112 /* rec_voice_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FA78C2292F09C200E10112 /* rec_voice_n.png */; };
+		89FA78CB292F0B2300E10112 /* image_del_png.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FA78C9292F0B2300E10112 /* image_del_png.png */; };
+		89FA78CC292F0B2300E10112 /* location_check_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FA78CA292F0B2300E10112 /* location_check_night.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		89FA78C0292F09C200E10112 /* my_go_icon_information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_go_icon_information.png; sourceTree = "<group>"; };
 		89FA78C1292F09C200E10112 /* rec_voice_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rec_voice_a.png; sourceTree = "<group>"; };
 		89FA78C2292F09C200E10112 /* rec_voice_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rec_voice_n.png; sourceTree = "<group>"; };
+		89FA78C9292F0B2300E10112 /* image_del_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_del_png.png; sourceTree = "<group>"; };
+		89FA78CA292F0B2300E10112 /* location_check_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_check_night.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		89FA78B6292F091C00E10112 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				89FA78C9292F0B2300E10112 /* image_del_png.png */,
+				89FA78CA292F0B2300E10112 /* location_check_night.png */,
 				89FA78BD292F09C200E10112 /* icon_infomation_road.png */,
 				89FA78BF292F09C200E10112 /* information_img.png */,
 				89FA78BE292F09C200E10112 /* location_check_day.png */,
@@ -171,12 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				89FA78C5292F09C200E10112 /* information_img.png in Resources */,
+				89FA78CC292F0B2300E10112 /* location_check_night.png in Resources */,
 				89FA78A7292F05AE00E10112 /* LaunchScreen.storyboard in Resources */,
 				89FA78BA292F096800E10112 /* icon_infomation_camera.png in Resources */,
 				89FA78C8292F09C200E10112 /* rec_voice_n.png in Resources */,
 				89FA78C7292F09C200E10112 /* rec_voice_a.png in Resources */,
 				89FA78C4292F09C200E10112 /* location_check_day.png in Resources */,
 				89FA78C3292F09C200E10112 /* icon_infomation_road.png in Resources */,
+				89FA78CB292F0B2300E10112 /* image_del_png.png in Resources */,
 				89FA78A4292F05AE00E10112 /* Assets.xcassets in Resources */,
 				89FA78BB292F096800E10112 /* icon_infomation_place.png in Resources */,
 				89FA78A2292F05AC00E10112 /* Main.storyboard in Resources */,
