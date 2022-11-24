@@ -16,34 +16,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSDictionary *item1 = [[NSDictionary alloc] initWithObjectsAndKeys:@"사과", @"name", @"image_del_png.png", @"image", @"6", @"amount", @"3000원", @"value", nil];
+    NSDictionary *item2 = [[NSDictionary alloc] initWithObjectsAndKeys:@"블루베리", @"name", @"location_check_night.png", @"image", @"10", @"amount", @"30000원", @"value", nil];
+    NSDictionary *item3 = [[NSDictionary alloc] initWithObjectsAndKeys:@"당근", @"name", @"icon_information_road.png", @"image", @"13", @"amount", @"5000원", @"value", nil];
+    NSDictionary *item4 = [[NSDictionary alloc] initWithObjectsAndKeys:@"체리", @"name", @"location_check_day.png", @"image", @"1", @"amount", @"2000원", @"value", nil];
+    NSDictionary *item5 = [[NSDictionary alloc] initWithObjectsAndKeys:@"포도", @"name", @"my_go_icon_information.png", @"image", @"13", @"amount", @"1000원", @"value", nil];
+    NSDictionary *item6 = [[NSDictionary alloc] initWithObjectsAndKeys:@"키위", @"name", @"rec_voice_a.png", @"image", @"2", @"amount", @"15000원", @"value", nil];
+    NSDictionary *item7 = [[NSDictionary alloc] initWithObjectsAndKeys:@"레몬", @"name", @"rec_voice_n.png", @"image", @"3", @"amount", @"6000원", @"value", nil];
+    NSDictionary *item8 = [[NSDictionary alloc] initWithObjectsAndKeys:@"라임", @"name", @"icon_information_camera.png", @"image", @"4", @"amount", @"4000원", @"value", nil];
+    NSDictionary *item9 = [[NSDictionary alloc] initWithObjectsAndKeys:@"고기", @"name", @"icon_information_place.png", @"image", @"5", @"amount", @"2000원", @"value", nil];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return itemList.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Hello" forIndexPath:indexPath];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

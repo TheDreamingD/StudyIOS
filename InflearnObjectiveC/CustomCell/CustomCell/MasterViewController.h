@@ -9,7 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController {
+    NSArray *itemList;
+}
 
 @end
 
