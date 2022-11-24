@@ -26,6 +26,8 @@
     NSDictionary *item7 = [[NSDictionary alloc] initWithObjectsAndKeys:@"레몬", @"name", @"rec_voice_n.png", @"image", @"3", @"amount", @"6000원", @"value", nil];
     NSDictionary *item8 = [[NSDictionary alloc] initWithObjectsAndKeys:@"라임", @"name", @"icon_information_camera.png", @"image", @"4", @"amount", @"4000원", @"value", nil];
     NSDictionary *item9 = [[NSDictionary alloc] initWithObjectsAndKeys:@"고기", @"name", @"icon_information_place.png", @"image", @"5", @"amount", @"2000원", @"value", nil];
+    
+    itemList = [[NSArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
 }
 
 #pragma mark - Table view data source
