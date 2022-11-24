@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Hello" rowHeight="153" id="0Cg-kb-end">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Hello" rowHeight="153" id="0Cg-kb-end" customClass="CustomCell">
                                 <rect key="frame" x="0.0" y="50" width="393" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Cg-kb-end" id="W7k-vw-7ii">
@@ -51,6 +51,12 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountLabel" destination="F8z-sr-v3s" id="EcM-2G-T7X"/>
+                                    <outlet property="imgView" destination="mPF-fg-4Mo" id="J01-YM-7wH"/>
+                                    <outlet property="nameLabel" destination="KWo-4K-dMN" id="FiZ-ol-T1x"/>
+                                    <outlet property="valueLabel" destination="FWn-Wo-ZNw" id="T6I-rU-dbF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

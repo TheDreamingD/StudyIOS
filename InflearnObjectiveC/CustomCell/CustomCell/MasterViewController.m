@@ -6,6 +6,7 @@
 //
 
 #import "MasterViewController.h"
+#import "CustomCell.h"
 
 @interface MasterViewController ()
 
@@ -30,17 +31,21 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return itemList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Hello" forIndexPath:indexPath];
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Hello" forIndexPath:indexPath];
+    
+    NSDictionary *dicTemp = [itemList objectAtIndex:indexPath.row];
+    
+    cell.nameLabel.text = [dicTemp objectForKey:@"name"];
+    cell.amountLabel.text = [dicTemp objectForKey:@"amount"];
+    cell.valueLabel.text = [dicTemp objectForKey:@"value"];
     
     return cell;
 }
