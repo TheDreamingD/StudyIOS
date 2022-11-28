@@ -7,6 +7,7 @@
 
 #import "MasterViewController.h"
 #import "CustomCell.h"
+#import "DetailViewController.h"
 
 @interface MasterViewController ()
 
@@ -60,6 +61,13 @@
     cell.imgView.image = [UIImage imageNamed:[dicTemp objectForKey:@"image"]];
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        [[segue destinationViewController] setDetailData:[itemList objectAtIndex:indexPath.row]];
+    }
 }
 
 /*

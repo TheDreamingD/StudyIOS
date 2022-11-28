@@ -57,7 +57,7 @@
                                     <outlet property="imgView" destination="mPF-fg-4Mo" id="J01-YM-7wH"/>
                                     <outlet property="nameLabel" destination="KWo-4K-dMN" id="FiZ-ol-T1x"/>
                                     <outlet property="valueLabel" destination="FWn-Wo-ZNw" id="T6I-rU-dbF"/>
-                                    <segue destination="0bf-US-jhb" kind="show" id="JVy-cA-0tA"/>
+                                    <segue destination="0bf-US-jhb" kind="show" identifier="showDetail" id="JVy-cA-0tA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
