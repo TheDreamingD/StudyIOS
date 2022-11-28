@@ -12,10 +12,12 @@
 @end
 
 @implementation DetailViewController
+@synthesize nameLabel, amountLabel, valueLabel, imgView, detailData;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSLog(@"%@", detailData);
 }
 
 /*
