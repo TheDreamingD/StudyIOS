@@ -15,6 +15,11 @@
 		89CE04D42934924800576D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CE04D22934924800576D6C /* LaunchScreen.storyboard */; };
 		89CE04D72934924800576D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CE04D62934924800576D6C /* main.m */; };
 		89CE04DF2934933800576D6C /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CE04DE2934933800576D6C /* WeatherCell.m */; };
+		89CE04E62934947400576D6C /* icon_infomation_road.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CE04E12934947400576D6C /* icon_infomation_road.png */; };
+		89CE04E72934947400576D6C /* location_check_day.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CE04E22934947400576D6C /* location_check_day.png */; };
+		89CE04E82934947400576D6C /* location_check_night.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CE04E32934947400576D6C /* location_check_night.png */; };
+		89CE04E92934947400576D6C /* icon_infomation_place.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CE04E42934947400576D6C /* icon_infomation_place.png */; };
+		89CE04EA2934947400576D6C /* icon_infomation_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CE04E52934947400576D6C /* icon_infomation_camera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		89CE04D62934924800576D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89CE04DD2934933800576D6C /* WeatherCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
 		89CE04DE2934933800576D6C /* WeatherCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
+		89CE04E12934947400576D6C /* icon_infomation_road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_infomation_road.png; sourceTree = "<group>"; };
+		89CE04E22934947400576D6C /* location_check_day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_check_day.png; sourceTree = "<group>"; };
+		89CE04E32934947400576D6C /* location_check_night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_check_night.png; sourceTree = "<group>"; };
+		89CE04E42934947400576D6C /* icon_infomation_place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_infomation_place.png; sourceTree = "<group>"; };
+		89CE04E52934947400576D6C /* icon_infomation_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_infomation_camera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 		89CE04C32934924600576D6C /* XMLParsing */ = {
 			isa = PBXGroup;
 			children = (
+				89CE04E02934945100576D6C /* Resources */,
 				89CE04C42934924600576D6C /* AppDelegate.h */,
 				89CE04C52934924600576D6C /* AppDelegate.m */,
 				89CE04C72934924600576D6C /* SceneDelegate.h */,
@@ -79,6 +90,18 @@
 				89CE04D62934924800576D6C /* main.m */,
 			);
 			path = XMLParsing;
+			sourceTree = "<group>";
+		};
+		89CE04E02934945100576D6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89CE04E52934947400576D6C /* icon_infomation_camera.png */,
+				89CE04E42934947400576D6C /* icon_infomation_place.png */,
+				89CE04E12934947400576D6C /* icon_infomation_road.png */,
+				89CE04E22934947400576D6C /* location_check_day.png */,
+				89CE04E32934947400576D6C /* location_check_night.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CE04E72934947400576D6C /* location_check_day.png in Resources */,
+				89CE04EA2934947400576D6C /* icon_infomation_camera.png in Resources */,
+				89CE04E62934947400576D6C /* icon_infomation_road.png in Resources */,
+				89CE04E82934947400576D6C /* location_check_night.png in Resources */,
 				89CE04D42934924800576D6C /* LaunchScreen.storyboard in Resources */,
 				89CE04D12934924800576D6C /* Assets.xcassets in Resources */,
 				89CE04CF2934924600576D6C /* Main.storyboard in Resources */,
+				89CE04E92934947400576D6C /* icon_infomation_place.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
