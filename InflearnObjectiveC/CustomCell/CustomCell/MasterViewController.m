@@ -37,6 +37,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    tableView.rowHeight = 150;
+    
     return itemList.count;
 }
 
@@ -48,6 +50,8 @@
     cell.nameLabel.text = [dicTemp objectForKey:@"name"];
     cell.amountLabel.text = [dicTemp objectForKey:@"amount"];
     cell.valueLabel.text = [dicTemp objectForKey:@"value"];
+    
+    cell.imgView.image = [UIImage imageNamed:[dicTemp objectForKey:@"image"]];
     
     return cell;
 }
