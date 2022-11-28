@@ -16,8 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    imgView.layer.cornerRadius = 50.0;
+    imgView.layer.masksToBounds = true;
+
+    nameLabel.text = [detailData objectForKey:@"name"];
+    amountLabel.text = [detailData objectForKey:@"amount"];
+    valueLabel.text = [detailData objectForKey:@"value"];
     
-    NSLog(@"%@", detailData);
+    imgView.image = [UIImage imageNamed:[detailData objectForKey:@"image"]];
 }
 
 /*
