@@ -51,6 +51,7 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="amountLabel" destination="F8z-sr-v3s" id="EcM-2G-T7X"/>
                                     <outlet property="imgView" destination="mPF-fg-4Mo" id="J01-YM-7wH"/>

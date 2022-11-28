@@ -28,6 +28,12 @@
     NSDictionary *item9 = [[NSDictionary alloc] initWithObjectsAndKeys:@"고기", @"name", @"icon_information_place.png", @"image", @"5", @"amount", @"2000원", @"value", nil];
     
     itemList = [[NSArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
+    
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"information_img.png"]];
+    backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    backgroundImageView.frame = self.tableView.frame;
+    
+    self.tableView.backgroundView = backgroundImageView;
 }
 
 #pragma mark - Table view data source
